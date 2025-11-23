@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"Copyright© 2023 LinuxUsersLinuxMint"
-"Python Calcutator-inputdtr Tüm Hakları GPL(Genel Kamu Lisansı) altında korunmaktadır."
-"Python Calcutator-inputdtr All Rights Reserved under the GPL(General Public License)."
-"Bu Yazılımın Bir Kopyası GİTHUB da yayınlanmaktadır Görüntülemek için: https://github.com/LinuxUsersLinuxMint/LinuxUsersLinuxMint"
-"A Copy of This Software is published on GITHUB To view: https://github.com/LinuxUsersLinuxMint/LinuxUsersLinuxMint"
+""" Copyright© 2023-2025 OpenSoftware-World
+Python-Module Tüm Hakları GPL(Genel Kamu Lisansı) altında korunmaktadır.
+Python-Module All Rights Reserved under the GPL(General Public License).
+Bu Yazılımın Bir Kopyası GitHub da yayınlanmaktadır Görüntülemek için: https://github.com/OpenSoftware-World/Python-Module
+A Copy of This Software is published on GitHub To view: https://github.com/OpenSoftware-World/Python-Module """
 
 command=input('calc> ')
 comtxt="calc> "
