@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Copyright© 2023-2025 OpenSoftware-World
+""" Copyright© 2023-2026 OpenSoftware-World
 Python-Module Tüm Hakları GPL(Genel Kamu Lisansı) altında korunmaktadır.
 Python-Module All Rights Reserved under the GPL(General Public License).
 Bu Yazılımın Bir Kopyası GitHub da yayınlanmaktadır Görüntülemek için: https://github.com/OpenSoftware-World/Python-Module
@@ -11,15 +11,15 @@ if command=="calc":
     print("calc> Transactions You Can Enter: ")
     print("collect\nExtraction\n\Impact\nDivide\nPercentage\nabout")
     number1 , number2 , process
-    if process=="collect": 
+    if process == "collect" and process == "+" and process == "addition": 
        print("{0} + {1} = {2}". format(number1,number2,addition))  
-    elif process=="Extraction":
+    elif process == "Extraction":
        print("{0} - {1} = {2}". format(number1,number2,subraction))
-    elif process=="Impact":
+    elif process == "Impact":
        print("{0} * {1} = {2}". format(number1,number2,multiplication))
-    elif process=="Divide":
+    elif process == "Divide":
        print("{0} / {1} = {2}". format(number1,number2,division))
-    elif process=="Percentage":
+    elif process == "Percentage":
        print("{0} % {1} = {2}". format(number1,number2,Percentage))
     else:
        print("Invalid Proccess!")
@@ -31,9 +31,9 @@ elif command=="help":
    print("Python calc Help")
    print("\n Command: calc , about , help , exit , git-address , web-site , ver , licence")
 elif command=="git-address":
-   print("Github Link: https://github.com/LinuxUsersLinuxMint")
+   print("Github Link: https://github.com/OpenSoftware-World")
 elif command=="web-site":
-   print("linuxuserslinuxmint.github.io")
+   print("https://opensoftware-world.github.io")
 elif command=="ver":
    print("Version: 0.1.7 (Last Updated September 8 , 2023 , 18:08)")
 elif command=="licence":

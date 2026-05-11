@@ -1,29 +1,29 @@
 #!/usr/bin/python3
-def top():
+def add():
         sayi1=int(input('1.sayiyi giriniz: '))
         sayi2=int(input('2.sayiyi giriniz: '))
         sonuc = sayi1 + sayi2
         print("{0} + {1} = {2}".format(sayi1,sayi2,sonuc))
         return
-def cık():
+def sub():
         sayi1=int(input('1.sayiyi giriniz: '))
         sayi2=int(input('2.sayiyi giriniz: '))
         sonuc = sayi1 - sayi2
         print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
         return
-def carp():
+def mul():
         sayi1=int(input('1.sayiyi giriniz: '))
         sayi2=int(input('2.sayiyi giriniz: '))
         sonuc = sayi1 * sayi2
         print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
         return
-def bol():
+def div():
         sayi1=int(input('1.sayiyi giriniz: '))
         sayi2=int(input('2.sayiyi giriniz: '))
         sonuc = sayi1 / sayi2
         print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
         return
-def yuzde():
+def per():
         sayi1=int(input('1.sayiyi giriniz: '))
         sayi2=int(input('2.sayiyi giriniz: '))
         sonuc = sayi1 % sayi2

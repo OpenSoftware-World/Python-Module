@@ -4,14 +4,14 @@ from inputd import *
 select=input('İşlem Giriniz: ')
 
 if select=="top":
-    top()
+    add()
 elif select=="cık":
-    cık()
+    sub()
 elif select=="carp":
-    carp()
+    mul()
 elif select=="bol":
-    bol()
+    div()
 elif select=="yuzde":
-    yuzde()
+    per()
 else:
     print("Hiç bir işlem girilmedi...")
