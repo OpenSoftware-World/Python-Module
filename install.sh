@@ -5,7 +5,7 @@ read -p "Would you like to download the Calc app by copying it to the /usr/bin d
 read -p "Please select the calculator language. (TR/EN) " lang
 
 if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
-    full_path="INSTALL/$lang/calc"
+    full_path="Install/$lang/calc"
     sudo cp $full_path /usr/bin/
     sudo chmod +x /usr/bin/calc
     echo "The Calc app has been successfully downloaded."
