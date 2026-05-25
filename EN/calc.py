@@ -11,32 +11,28 @@ if command=="calc":
     print("calc> Transactions You Can Enter: ")
     print("collect\nExtraction\n\Impact\nDivide\nPercentage\nabout")
     number1 , number2 , process
-    if process == "collect" and process == "+" and process == "addition": 
-       print("{0} + {1} = {2}". format(number1,number2,addition))  
-    elif process == "Extraction":
-       print("{0} - {1} = {2}". format(number1,number2,subraction))
-    elif process == "Impact":
-       print("{0} * {1} = {2}". format(number1,number2,multiplication))
-    elif process == "Divide":
-       print("{0} / {1} = {2}". format(number1,number2,division))
-    elif process == "Percentage":
-       print("{0} % {1} = {2}". format(number1,number2,Percentage))
-    else:
-       print("Invalid Proccess!")
-if command=="about":
+    if process in ("collect", "Collect", "+"): 
+       print(f"{0} + {1} = {2}". format(number1,number2,collect))  
+    elif process in ("Extraction", "extraction", "-"):
+       print(f"{0} - {1} = {2}". format(number1,number2,Extraction))
+    elif process in ("multiplication", "Multiplication", "*"):
+       print(f"{0} * {1} = {2}". format(number1,number2,Impact))
+    elif process in ("divide", "Divide", "/"):
+       print(f"{0} / {1} = {2}". format(number1,number2,Divide))
+    elif process in ("percentage", "Percentage", "%"):
+       print(f"{0} % {1} = {2}". format(number1,number2,Percentage))
+if command in ("about", "About", "info", "Info", "information", "Information"):
    print(about)
-elif command=="exit":
+elif command in ("exit", "Exit"):
    exit()
-elif command=="help":
+elif command in ("help", "Help", "list", "List", "commands", "commands-list"):
    print("Python calc Help")
    print("\n Command: calc , about , help , exit , git-address , web-site , ver , licence")
-elif command=="git-address":
+elif command in ("git-address", "OpenSoftware-World GitHub Address", "GitHub Link", "GitHub Page"):
    print("Github Link: https://github.com/OpenSoftware-World")
-elif command=="web-site":
+elif command in ("web-site", "Web site", "Web Site"):
    print("https://opensoftware-world.com")
-elif command=="ver":
-   print("Version: 0.1.7 (Last Updated September 8 , 2023 , 18:08)")
-elif command=="licence":
+elif command in ("ver", "Ver", "version", "Version"):
+   print("Version: 0.1.5.5 (Last Updated September 6 , 2023 , 22:22)")
+elif command in ("licence", "Licence", "Licence info"):
    print("This Software is protected under the GPL2 license")
-else:
-   print("Invalid Command!")

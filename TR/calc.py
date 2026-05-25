@@ -26,20 +26,20 @@ if command in ("calc", "Calc", "calculator", "Calculator"):
      print(f"{sayi1} + {sayi2} = {yuzde}")
    else:
        print("Geçersiz İşlem")
-   if command=="about":
-      print(about)
-   elif command=="exit":
-        exit()
-   elif command=="help":
-        print("Python calc Help")
-        print("\n Command: calc , about , help , exit , git-address , web-site , ver , licence")
-   elif command=="git-address":
-        print("Github Link: https://github.com/OpenSoftware-World")
-   elif command=="web-site":
-        print("https://opensoftware-world.com")
-   elif command=="ver":
-        print("Sürüm: 0.1.7 (Son Güncellenme Tarihi 8 Eylül , 2023 , 18:08)")
-   elif command=="licence":
-        print("This Software is protected under the GPL2 license")
-   else:
-        print("Geçersiz Komut")
+if command in ("about", "About", "info", "Info", "information", "Information"):
+     print(about)
+elif command in ("exit", "Exit"):
+     exit()
+elif command in ("help", "Help", "list", "List", "commands", "commands-list"):
+     print("Python calc Help")
+     print("\n Command: calc , about , help , exit , git-address , web-site , ver , licence")
+elif command in ("git-address", "OpenSoftware-World GitHub Address", "GitHub Link", "GitHub Page"):
+     print("Github Link: https://github.com/OpenSoftware-World")
+elif command in ("web-site", "Web site", "Web Site"):
+     print("https://opensoftware-world.com")
+elif command in ("ver", "Ver", "version", "Version"):
+     print("Sürüm: 0.1.7 (Son Güncellenme Tarihi 8 Eylül , 2023 , 18:08)")
+elif command in ("licence", "Licence", "Licence info"):
+     print("This Software is protected under the GPL2 license")
+else:
+     print("Geçersiz Komut")
