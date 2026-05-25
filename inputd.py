@@ -5,71 +5,46 @@ Python-Module All Rights Reserved under the GPL(General Public License).
 Bu Yazılımın Bir Kopyası GitHub da yayınlanmaktadır Görüntülemek için: https://github.com/OpenSoftware-World/Python-Module
 A Copy of This Software is published on GitHub To view: https://github.com/OpenSoftware-World/Python-Module """
 
-# Hesap Makinesi Değişkenleri / Calcutator inputs
+# Calcutator inputs
 
-def add():
-    sayi1=int(input('1.sayiyi giriniz: '))
-    sayi2=int(input('2.sayiyi giriniz: '))
-    sonuc = sayi1 + sayi2
-    print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
-    return
-def sub():
-    sayi1=int(input('1.sayiyi giriniz: '))
-    sayi2=int(input('2.sayiyi giriniz: '))
-    sonuc = sayi1 - sayi2
-    print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
-    return
-def mul():
-    sayi1=int(input('1.sayiyi giriniz: '))
-    sayi2=int(input('2.sayiyi giriniz: '))
-    sonuc = sayi1 * sayi2
-    print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
-    return
-def div():
-    sayi1=int(input('1.sayiyi giriniz: '))
-    sayi2=int(input('2.sayiyi giriniz: '))
-    sonuc = sayi1 / sayi2
-    print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
-    return
-def per():
-    sayi1=int(input('1.sayiyi giriniz: '))
-    sayi2=int(input('2.sayiyi giriniz: '))
-    sonuc = sayi1 % sayi2
-    print("{0} + {1} = {2}". format(sayi1,sayi2,sonuc))
-    return
+def calc_input(lang):
+    global not_zero_div
+    if lang == "en" or lang == "EN" or lang == "English":
+        number1_str= "Enter the First Number: "
+        number2_str= "Enter the Second Number: "
+        not_zero_div = "It cannot be divided by 0."
+    elif lang == "tr" or lang == "TR" or lang == "Turkish" or lang == "Türkçe":
+        number1_str= "1.sayiyi giriniz: "
+        number2_str= "2.sayiyi giriniz: "
+        not_zero_div = "0'a bölünemez."
+    number1=float(input(number1_str))
+    number2=float(input(number2_str))
+    return number1, number2
 
-def addition():
-    number1=int(input('Enter the First Number: '))
-    number2=int(input('Enter the Second Number: '))
-    result = number1 + number2
-    print("{0} + {1} = {2}". format(number1,number2,result))
-    return
-def subraction():
-    number1=int(input('Enter the First Number: '))
-    number2=int(input('Enter the Second Number: '))
-    result = number1 - number2
-    print("{0} + {1} = {2}". format(number1,number2,result))
-    return
-def multiplication():
-    number1=int(input('Enter the First Number: '))
-    number2=int(input('Enter the Second Number: '))
-    result = number1 * number2
-    print("{0} + {1} = {2}". format(number1,number2,result))
-    return
-def division():
-    number1=int(input('Enter the First Number: '))
-    number2=int(input('Enter the Second Number: '))
-    result = number1 / number2
-    print("{0} + {1} = {2}". format(number1,number2,result))
-    return
-def Percentage():
-    number1=int(input('Enter the First Number: '))
-    number2=int(input('Enter the Second Number: '))
-    result = number1 % number2
-    print("{0} + {1} = {2}". format(number1,number2,result))
-    return
+def add(lang):
+    number1, number2 = calc_input(lang)
+    print(f"{number1} + {number2} = {number1 + number2}")
+
+def sub(lang):
+    number1, number2 = calc_input(lang)
+    print(f"{number1} - {number2} = {number1 - number2}")
+
+def mul(lang):
+    number1, number2 = calc_input(lang)
+    print(f"{number1} * {number2} = {number1 * number2}")
+
+def div(lang):
+    number1, number2 = calc_input(lang)
+    if number2 == 0:
+        print(not_zero_div)
+        return
+    print(f"{number1} / {number2} = {number1 / number2}")
+
+def per(lang):
+    number1, number2 = calc_input(lang)
+    print(f"{number1} % {number2} = {(number1 / number2) * 100}")
 
 # number,letter inputs (for random)
 
-numbers=[0,1,2,3,4,5,6,7,8,9,10]
-letters="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
+numbers = [0,1,2,3,4,5,6,7,8,9,10]
+letters= "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"

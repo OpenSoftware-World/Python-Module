@@ -7,20 +7,23 @@ A Copy of This Software is published on GitHub To view: https://github.com/OpenS
 
 from inputdtr import *
 
-if command=="calc":
+if command in ("calc", "Calc", "calculator", "Calculator"):
    print("calc> Girebileceğiniz işlemler: ")
    print("top\ncık\n\carp\nbol\nyuzde\nabout")
    sayi1 , sayi2 , islem
-   if islem=="top": 
-      print("{0} + {1} = {2}". format(sayi1,sayi2,top))  
-   elif islem=="cık":
-       print("{0} - {1} = {2}". format(sayi1,sayi2,cık))
-   elif islem=="carp":
-       print("{0} * {1} = {2}". format(sayi1,sayi2,carp))
-   elif islem=="bol":
-       print("{0} / {1} = {2}". format(sayi1,sayi2,bol))
-   elif islem=="yuzde":
-       print("{0} % {1} = {2}". format(sayi1,sayi2,yuzde))
+   if islem in ("toplama", "Toplama", "+"): 
+     print(f"{sayi1} + {sayi2} = {top}")
+   elif islem in ("çıkarma", "Çıkarma", "-"):
+     print(f"{sayi1} + {sayi2} = {cık}")
+   elif islem in ("çarpma", "Çarpma", "*"):
+     print(f"{sayi1} + {sayi2} = {carp}")
+   elif islem in ("bölme", "Bölme", "/"):
+     if sayi2 == 0:
+        print("0'a bölünemez. Lütfen 0'dan farklı bir sayı giriniz.")
+    else:
+        print(f"{sayi1} + {sayi2} = {bol}")
+   elif islem in ("yüzde alma", "Yüzde alma", "%"):
+     print(f"{sayi1} + {sayi2} = {yuzde}")
    else:
        print("Geçersiz İşlem")
    if command=="about":
@@ -33,7 +36,7 @@ if command=="calc":
    elif command=="git-address":
         print("Github Link: https://github.com/OpenSoftware-World")
    elif command=="web-site":
-        print("https://opensoftware-world.github.io")
+        print("https://opensoftware-world.com")
    elif command=="ver":
         print("Sürüm: 0.1.7 (Son Güncellenme Tarihi 8 Eylül , 2023 , 18:08)")
    elif command=="licence":

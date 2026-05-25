@@ -4,23 +4,17 @@
 cls
 echo Python-Calcutator Uninstall
 echo Which Version Do You Want To Uninstall?
-echo 1.Python-Calcutator-TR
-echo 2.Python-Calcutator-EN
+echo Are you sure you want to uninstall Python-Calculator from your system?
 echo Choose:
 set input=nothing
 set/p input=Choose:
-if %input%==1 goto one
-if %input%==2 goto two
+if %input%==Y goto uninstall
+if %input%==N exit
 goto m
-:one
-echo Python-Calcutator-TR Uninstall.
-pause
-del C:\Users\%users%\calc
-pause
-exit
-goto m
-:two
-echo Python-Calcutator-EN Uninstall.
+:uninstall
+if %input%==1 set input=TR
+if %input%==2 set input=EN
+echo Python-Calcutator-%input% Uninstall.
 pause
 del C:\Users\%users%\calc
 pause

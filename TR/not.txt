@@ -1,3 +1,3 @@
-NOT: Kodları istediğiniz gibi değiştirip kullanabilirsiniz. Kodlar açık kaynak kodludur.
-NOT2: Kodların Orjinal Hali OpenSoftware-World Tarafından Yazılmıştır.
-GİTHUB: https://github.com/OpenSoftware-World/OpenSoftware-World
+Not: Kodları istediğiniz gibi değiştirip kullanabilirsiniz. Kodlar açık kaynak kodludur.
+Not2: Kodların Orjinal Hali OpenSoftware-World Tarafından Yazılmıştır.
+GitHub: https://github.com/OpenSoftware-World/OpenSoftware-World

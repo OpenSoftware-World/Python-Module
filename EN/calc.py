@@ -33,7 +33,7 @@ elif command=="help":
 elif command=="git-address":
    print("Github Link: https://github.com/OpenSoftware-World")
 elif command=="web-site":
-   print("https://opensoftware-world.github.io")
+   print("https://opensoftware-world.com")
 elif command=="ver":
    print("Version: 0.1.7 (Last Updated September 8 , 2023 , 18:08)")
 elif command=="licence":
