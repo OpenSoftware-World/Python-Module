@@ -1,7 +1,11 @@
 Python Calcutator
 
-Not: sadece TR (Türkiye) ve English (İngilizce) versiyonları vardır.
+TR:
+
+Not: sadece Türkçe ve İngilizce versiyonları vardır.
 Komutlar: calc , about , help , exit
 
-Note: There are only TR (Turkey) and English (English) versions.
+EN:
+
+Note: There are only Turkish and English versions.
 Commands: calc , about , help , exit

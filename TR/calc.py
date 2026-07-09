@@ -19,9 +19,9 @@ if command in ("calc", "Calc", "calculator", "Calculator"):
      print(f"{sayi1} + {sayi2} = {carp}")
    elif islem in ("bölme", "Bölme", "/"):
      if sayi2 == 0:
-        print("0'a bölünemez. Lütfen 0'dan farklı bir sayı giriniz.")
-    else:
-        print(f"{sayi1} + {sayi2} = {bol}")
+         print("0'a bölünemez. Lütfen 0'dan farklı bir sayı giriniz.")
+     else:
+         print(f"{sayi1} + {sayi2} = {bol}")
    elif islem in ("yüzde alma", "Yüzde alma", "%"):
      print(f"{sayi1} + {sayi2} = {yuzde}")
    else:
