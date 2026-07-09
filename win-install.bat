@@ -15,6 +15,6 @@ goto m
 :install
 echo Python-Calculator-%input% Version will be downloaded.
 pause
-copy "INSTALL\%input%\calc" "C:\Users\%USERNAME%\"
+copy "Install\%input%\calc" "C:\Users\%USERNAME%\"
 pause
 exit
