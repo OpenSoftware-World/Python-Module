@@ -9,18 +9,18 @@ from inputden import *
 
 if command=="calc":
     print("calc> Transactions You Can Enter: ")
-    print("collect\nExtraction\n\Impact\nDivide\nPercentage\nabout")
+    print("addition\nsubraction\n\multiplication\ndivision\nPercentage\nabout")
     number1 , number2 , process
-    if process in ("collect", "Collect", "+"): 
-       print(f"{number1} + {number2} = {addition}")  
-    elif process in ("Extraction", "extraction", "-"):
-       print(f"{number1} - {number2} = {subraction}")
+    if process in ("addition", "addition", "+"): 
+       print(f"{0} + {1} = {2}". format(number1,number2,addition))  
+    elif process in ("subraction", "subraction", "-"):
+       print(f"{0} - {1} = {2}". format(number1,number2,subraction))
     elif process in ("multiplication", "Multiplication", "*"):
-       print(f"{number1} * {number2} = {multiplication}")
-    elif process in ("divide", "Divide", "/"):
-       print(f"{number1} / {number2} = {division}")
+       print(f"{0} * {1} = {2}". format(number1,number2,multiplication))
+    elif process in ("division", "division", "/"):
+       print(f"{0} / {1} = {2}". format(number1,number2,division))
     elif process in ("percentage", "Percentage", "%"):
-       print(f"{number1} % {number2} = {Percentage}")
+       print(f"{0} % {1} = {2}". format(number1,number2,Percentage))
 if command in ("about", "About", "info", "Info", "information", "Information"):
    print(about)
 elif command in ("exit", "Exit"):
