@@ -1,20 +1,20 @@
 @echo off
-@title=Python-Calcutator Setup
+title Python-Calculator Setup
 :m
 cls
-echo Python-Calcutator Setup
+echo Python-Calculator Setup
 echo Which Version Do You Want To Install?
-echo 1. Python-Calcutator-TR
-echo 2. Python-Calcutator-EN
-echo Choose:
-set input=nothing
-set/p input=Choose:
-if %input%==TR goto install
-if %input%==EN goto install
+echo 1. Python-Calculator-TR
+echo 2. Python-Calculator-EN
+set /p input=Choose:
+if "%input%"=="1" set input=TR
+if "%input%"=="2" set input=EN
+if /I "%input%"=="TR" goto install
+if /I "%input%"=="EN" goto install
 goto m
 :install
-echo Python-Calcutator-%input% Version will be downloaded.
+echo Python-Calculator-%input% Version will be downloaded.
 pause
-copy INSTALL/%input%/calc C:\Users\%users%\
+copy "INSTALL\%input%\calc" "C:\Users\%USERNAME%\"
 pause
 exit
