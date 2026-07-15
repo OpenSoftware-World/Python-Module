@@ -12,15 +12,15 @@ if command=="calc":
     print("addition\nsubraction\n\multiplication\ndivision\nPercentage\nabout")
     number1 , number2 , process
     if process in ("addition", "addition", "+"): 
-       print(f"{0} + {1} = {2}". format(number1,number2,addition))  
+       print(f"{number1} + {number2} = {addition}")
     elif process in ("subraction", "subraction", "-"):
-       print(f"{0} - {1} = {2}". format(number1,number2,subraction))
+       print(f"{number1} - {number2} = {subraction}")
     elif process in ("multiplication", "Multiplication", "*"):
-       print(f"{0} * {1} = {2}". format(number1,number2,multiplication))
+       print(f"{number1} * {number2} = {multiplication}")
     elif process in ("division", "division", "/"):
-       print(f"{0} / {1} = {2}". format(number1,number2,division))
+       print(f"{number1} / {number2} = {division}")
     elif process in ("percentage", "Percentage", "%"):
-       print(f"{0} % {1} = {2}". format(number1,number2,Percentage))
+       print(f"{number1} % {number2} = {Percentage}")
 if command in ("about", "About", "info", "Info", "information", "Information"):
    print(about)
 elif command in ("exit", "Exit"):
@@ -33,6 +33,6 @@ elif command in ("git-address", "OpenSoftware-World GitHub Address", "GitHub Lin
 elif command in ("web-site", "Web site", "Web Site"):
    print("https://opensoftware-world.com")
 elif command in ("ver", "Ver", "version", "Version"):
-   print("Version: 0.1.5.5 (Last Updated September 6 , 2023 , 22:22)")
+   print("Version: 0.1.7 (Last Updated July 15 , 2026 , 17:07)")
 elif command in ("licence", "Licence", "Licence info"):
    print("This Software is protected under the GPL2 license")

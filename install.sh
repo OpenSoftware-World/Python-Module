@@ -12,5 +12,3 @@ if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
 else
     echo "The download of the Calc app has been canceled."
 fi
-
-# Changes will be made to the uninstall files for Linux.
